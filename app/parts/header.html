@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
 
-<head>
+    <title><!--#echo var="title" --></title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+    <meta name="viewport" content="width=device-width" />
 
-	<title><!--#echo var="title" --></title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+    <link rel="icon" href="images/favicon.png" />
+    <!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
 
-	<meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
 
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
-	
-	<link rel="stylesheet" href="css/main.min.css">
-
-</head>
-
-<body>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__top">
+              <div class="header__logo"><img src="images/dist/logo.svg" alt="logo" /></div>
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__list-item"><a class="menu__list-link" href="#">Меню</a></li>
+                  <li class="menu__list-item"><a class="menu__list-link" href="#">Фотоотчеты</a></li>
+                  <li class="menu__list-item"><a class="menu__list-link" href="#">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="header__contacts">
+                <div class="header__address">Прушинских, 58</div>
+                <div class="header__visiting">Ежедневно <span class="header__visiting-hours">16:00 - 02:00</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="container">
+          <h1 class="header__main-title">Скрась вечер вместе с нами</h1>
+          <h3 class="header__main-subtitle">
+            столик онлайн и получи скидку <br />
+            на кальян 10%
+          </h3>
+          <button class="header__main-button button">Забронировать</button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

@@ -1,10 +1,10 @@
 // USER VARIABLES SECTION
 
-$accent: orange // Accent Color
-$fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
+$accent: #44CEE3// Accent Color
+$fontsize: 18px // Body Font Size
+$textcolor: #E5E5E5 // Text Color
 $lineheight: 1.65 // Document Line Height
-$userfont: roboto-oh5, sans-serif // User Font Family
+$userfont: Inter, sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
@@ -27,10 +27,19 @@ $gutter: $grid-gutter-width
 		font-weight: $fweight
 		src: url($furl) format('woff2')
 
-@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
-@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
-@include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
-@include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+@include font('Inter', normal, 200, '../fonts/Inter-ExtraLight.woff2')
+@include font('Inter', normal, 300, '../fonts/Inter-Light.woff2')
+@include font('Inter', normal, 400, '../fonts/Inter-Regular.woff2')
+@include font('Inter', normal, 500, '../fonts/Inter-Medium.woff2')
+@include font('Inter', normal, 600, '../fonts/Inter-SemiBold.woff2')
+@include font('Inter', normal, 700, '../fonts/Inter-Bold.woff2')
+@include font('Inter', normal, 800, '../fonts/Inter-ExtraBold.woff2')
+
+@include font('Sarabun', normal, 300, '../fonts/Sarabun-Light.woff2')
+@include font('Sarabun', normal, 600, '../fonts/Sarabun-SemiBold.woff2')
+
+@include font('OpenSans-Light', normal, 300, '../fonts/OpenSans-Light.woff2')
+
 
 // GENERAL DOCUMENT STYLES
 
@@ -48,11 +57,50 @@ input, textarea
 	&:required:valid
 		border-color: green
 
+.container
+	max-width: 1200px
+	padding-left: 15px
+	padding-right: 15px
+	margin: 0 auto
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+	padding: 0
+	margin: 0
+
+a 
+	color: inherit
+	text-decoration: none
+	transition: all 0.4s ease
+	&:hover
+		text-decoration: none
+		color: #44CEE3
+
+button
+	transition: all 0.4s ease
+
+ul,li 
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+p 
+	padding: 0
+	margin: 0
+
 body
 	font-family: $userfont
 	font-size: $fontsize
+	font-weight: 300
 	line-height: $lineheight
 	color: $textcolor
+	margin: 0 auto
+	background-color: #000
+	max-width: 1440px
 	min-width: 320px
 	position: relative
 	overflow-x: hidden

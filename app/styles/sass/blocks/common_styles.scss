@@ -1,0 +1,16 @@
+.button {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 27px;
+	letter-spacing: 0.12em;
+	padding: 12px 33px;
+	text-transform: uppercase;
+	color: #ABE2EE;
+	border: 2px solid #ABE2EE;
+	background: rgba(9, 7, 5, .9);
+	border-radius: 25px;
+	&:hover {
+		color: #FFC634;
+		border: 2px solid #FFC634;
+	}
+}
